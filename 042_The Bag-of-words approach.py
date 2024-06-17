@@ -13,9 +13,9 @@ vectorizer = CountVectorizer(lowercase = True, stop_words = None,
 dtm = vectorizer.fit_transform(corpus)
 print(dtm.toarray())
 print(vectorizer.get_feature_names_out())
-# new_sentence = ["i am watching football players live"]
-# new_vector = vectorizer.transform([new_sentence])
-# print(new_vector.toarray())
+new_sentence = ["i am watching football players live"]
+new_vector = vectorizer.transform([new_sentence])
+rint(new_vector.toarray())
 
 # 3. N-grams
 
@@ -68,7 +68,7 @@ def main(file_path: str) -> None:
     print('---------- EX-01 ----------')
 
     # Load the csv file as a pandas dataframe
-    imdb = pd.read_csv(data/imdb.csv, encoding='utf-8')
+    imdb = pd.read_csv(file_path, encoding='utf-8')
 
     # Inspect the first few rows to see what's inside
     # --> INSPECT HERE <--
