@@ -256,7 +256,6 @@ plt.title('Dilated Image')
 plt.show()
 
 
-
 '''
 Course: Machine Learning and Deep Learning with Python
 SoSe 2024
