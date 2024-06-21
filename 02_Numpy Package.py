@@ -218,7 +218,7 @@ arr2d = np.zeros((5,5))
 arr_length = arr2d.shape[1] # number of columns
 # Fill the array
 for i in range(arr_length):
-         arr2d[i] = i
+    arr2d[i] = i
 print(arr2d)
 
 # You can now index arbitrarily:
