@@ -464,12 +464,18 @@ dataset = []
 
 # The function open() opens a file in read mode. The file remains open in the following
 # code block and is closed automatically when leaving the code block.
+# The with open statement opens a file named winequality-red.csv and assigns the file object to open_file.
+# The with statement ensures that the file is automatically closed after processing is complete.
 with open('winequality-red.csv') as open_file:
     # You can iterate over the elements, which are the lines of the file
     for line in open_file:
         # The following line removes whitespace around the string and replaces all
         # double quotes by an empty string (i.e., removes the double quotes)
         line = line.strip().replace('"', '')
+        # The strip() method is used to remove whitespace characters (including spaces, newlines, etc.)
+        # at the beginning and end of a string.
+        # replace('"', '') replaces all double quotes in a string with an empty string,
+        # that is, removes all double quotes.
         # Your task is to convert the string into a list of individual elements
         # and cast these to the respective data type (float, except for quality, which is int)
         line = line.split(';')
