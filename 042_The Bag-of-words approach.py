@@ -15,7 +15,7 @@ print(dtm.toarray())
 print(vectorizer.get_feature_names_out())
 new_sentence = ["i am watching football players live"]
 new_vector = vectorizer.transform([new_sentence])
-rint(new_vector.toarray())
+print(new_vector.toarray())
 
 # 3. N-grams
 
